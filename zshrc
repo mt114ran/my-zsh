@@ -18,12 +18,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-
-if [ -f "$HOME/zsh-autocomplete/zsh-autocomplete.plugin.zsh" ]; then
-  source "$HOME/zsh-autocomplete/zsh-autocomplete.plugin.zsh"
-else
-  autoload -U compinit && compinit
-fi
+autoload -U compinit && compinit
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
